@@ -1,0 +1,208 @@
+@media screen and (max-width: 600px) {
+      .col-1 {
+    width: 100%;
+  }
+}
+/*{
+  margin: 0;
+  padding: 0;
+}*/
+
+h1 {
+  font-family: 'Martel', serif;
+  color: rgb(102, 153, 0);
+  font-size: 1rem;
+
+}
+h2, h3 {
+  font-family: 'Martel', serif;
+  color: darkSlateblue;
+}
+h6 {
+  font-family: 'Martel', serif;
+  color: darkSlateblue;
+  font-size: 1rem;
+}
+a {
+font-family: 'Martel', serif;
+font-size: 1rem;
+}
+h5 {
+  font-family: 'Martel', serif;
+  color: white;
+  font-size: .8rem;
+}
+p  {
+  font-family: 'Martel', serif;
+  font-size: .8rem;
+}
+.form {
+  position: relative;
+  font-family: 'Martel' , serif;
+  margin-left: 25%;
+}
+
+.title-words {
+  position: absolute;
+  padding-top: 5%;
+  margin-left: 5%;
+  font-style: italic;
+}
+.logo {
+  width: 100%;
+}
+header {
+  position: relative;
+}
+
+nav {
+  position: relative;
+  padding: 1rem;
+  background-color: lightGray;
+  color: rgb(17, 64, 105);
+}
+section {
+  padding: 1rem;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.footnav{
+  background-color:rgb(17, 64, 105) ;
+  color: white;
+}
+.checkout {
+  color: white;
+  position: absolute;
+  top: 8rem;
+  right: 16rem;
+}
+.cart {
+  width: 2.5rem;
+}
+.subhead {
+  position: relative;
+}
+.grid-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+col-1 > div {
+  width: 20%;
+padding: 10px;
+}
+
+.grid-container > div {
+  width: 20%;
+  padding: 10px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+/*[class*="col-"] {
+  float: left;
+  margin-left: 2%;
+  margin-top: 1rem;
+  padding: 1%;
+  border: 1px solid lightgray;
+}
+.col-1 {width: 200px;}
+.col-2 {width: 33.33%;}
+.col-3 {width: 50%;}
+.col-4 {width: 66.66%;}
+.col-5 {width: 83.3%;}
+.col-6 {width: 100%;}
+
+.grid-container1 {
+  margin-right: 15%;
+  margin-left: 16%;
+  padding-right: 1%;
+  float: left;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.grid-container {
+  margin-right: 15%;
+  margin-left: 15%;
+  align-items: center;
+}*/
+
+/*@media screen and (max-width: 600px) {
+  .header-image {
+      display: block;
+      float: none;
+  }
+}*/
+.blog-photo {
+  float: left;
+  clear: left;
+  padding: 1rem;
+}
+.blog {
+  margin-left: 20%;
+  margin-right: 20%;
+  display: inline-block;
+}
+.blog-text {
+  float: right;
+  width: 55%;
+  padding-left: 10px;
+}
+
+.submitbutton {
+  background-color: rgb(102, 153, 0);
+  border: none;
+  color: white;
+  padding: 0%;
+  height: 100%;
+  width: 25%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.button {
+  background-color: rgb(102, 153, 0);
+  border: none;
+  color: white;
+  padding: 2%;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.text {
+  margin-left: 2%;
+}
+.card {
+  border: 1px;
+  border-color: lightGray;
+  margin: 2rem
+}
+.column {
+  position: relative;
+  flex: 1;
+  height: 5%;
+}
+.footlogo {
+  width: 25%;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+    text-align: center;
+    background-color:rgb(17, 64, 105);
+    display: block;
+    clear: both;
+    color: white;
+}
