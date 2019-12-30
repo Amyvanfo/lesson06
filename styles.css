@@ -1,9 +1,9 @@
 @media (max-width: 600px) {
-      section {
-    flex-direction: row;
-  }
+      column {
+        width: 100%;
+          }
 }
-/*{
+{
   margin: 0;
   padding: 0;
 }*/
@@ -12,7 +12,6 @@ h1 {
   font-family: 'Martel', serif;
   color: rgb(102, 153, 0);
   font-size: 1rem;
-
 }
 h2, h3 {
   font-family: 'Martel', serif;
@@ -54,18 +53,15 @@ p  {
 header {
   position: relative;
 }
-
 nav {
   position: relative;
   padding: 1rem;
   background-color: lightGray;
   color: rgb(17, 64, 105);
 }
-/*section {
-  padding: 1rem;
-  margin-left: 20%;
-  margin-right: 20%;
-}*/
+section {
+display: flex;
+}
 
 .footnav{
   background-color:rgb(17, 64, 105) ;
@@ -91,14 +87,14 @@ nav {
   display: inline;
 }*/
 .grid-container {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-left: 33%;
+  margin-left: 25%;
 }
 .grid-container > div {
-  width: ;
+  width: 50%;
   padding: 10px;
   margin-top: 10px;
   align-items: center;
@@ -141,15 +137,13 @@ col-1 > div {
       float: none;
   }
 }*/
-/*.blog-preview {
+.blog-preview {
   display: inline-block;
-  clear:right;
-  }*/
-.blog-row {
   width: 50%;
-  display: flex;
-  flex-direction: column;
-  margin-left: 30%;
+  margin-left: 25%;
+  margin-right: 25%;
+  }
+.blog-row {
 }
 .blog-photo {
   float: left;
@@ -161,6 +155,7 @@ col-1 > div {
   margin-right: 20%;
   display: inline-block;
 }
+
 .blog-text {
   float: right;
   width: 55%;
