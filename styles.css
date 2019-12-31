@@ -1,12 +1,20 @@
-@media (max-width: 600px) {
-      column {
-        width: 100%;
-          }
+@media screen and (max-width: 600px){
+
+body{background: green;}
 }
-{
+@media screen and (min-width: 600px) {
+  body{background: blue;}
+}
+@media screen and (min-width: 800px) {
+body{background: white;}
+}
+/*{
   margin: 0;
   padding: 0;
 }*/
+* {
+  box-sizing: border-box;
+}
 
 h1 {
   font-family: 'Martel', serif;
@@ -60,8 +68,9 @@ nav {
   color: rgb(17, 64, 105);
 }
 section {
-display: flex;
-}
+  margin-right: 25%;
+  margin-left: 25%;
+  }
 
 .footnav{
   background-color:rgb(17, 64, 105) ;
@@ -86,22 +95,41 @@ display: flex;
   width: 33%;
   display: inline;
 }*/
-.grid-container {
+/*flex version*/
+/*.grid-container {
   width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin-left: 25%;
-}
+}*/
+
+.grid-container {
+  /*margin-left: 25%;
+  margin-right: 25%;*/
+  grid-template-columns: auto auto auto auto;
+  }
 .grid-container > div {
-  width: 50%;
   padding: 10px;
   margin-top: 10px;
   align-items: center;
 }
 col-1 > div {
   width: 20%;
-  padding: 10px;}
+  max-width: 33%;
+  min-width: 10%;
+}
+.card {
+    display: inline-grid;
+    max-width: 100%;
+    min-width: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 2px;
+    text-align: left;
+    background-color: #f1f1f1;
+    border: 1px;
+    border-color: lightGray;
+  }
 
 /*[class*="col-"] {
   float: left;
@@ -124,12 +152,8 @@ col-1 > div {
   float: left;
   display: grid;
   grid-template-columns: auto auto;
-}
-.grid-container {
-  margin-right: 15%;
-  margin-left: 15%;
-  align-items: center;
 }*/
+
 
 /*@media screen and (max-width: 600px) {
   .header-image {
@@ -189,9 +213,7 @@ col-1 > div {
   font-size: 1rem;
   cursor: pointer;
 }
-.text {
-  margin-left: 2%;
-}
+
 .card {
   border: 1px;
   border-color: lightGray;
