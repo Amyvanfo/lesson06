@@ -15,7 +15,6 @@ body{background: white;}
 * {
   box-sizing: border-box;
 }
-
 h1 {
   font-family: 'Martel', serif;
   color: rgb(102, 153, 0);
@@ -68,8 +67,9 @@ nav {
   color: rgb(17, 64, 105);
 }
 section {
-  margin-right: 25%;
-  margin-left: 25%;
+  padding: 1rem;
+  margin-left: 20%
+  margin-right: 20%;
   }
 
 .footnav{
@@ -91,47 +91,35 @@ section {
   display: inline-block;
   width: 50%;
 }
-/*.subheader {
-  width: 33%;
-  display: inline;
-}*/
-/*flex version*/
-/*.grid-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-left: 25%;
-}*/
-
 .grid-container {
-  /*margin-left: 25%;
-  margin-right: 25%;*/
-  grid-template-columns: auto auto auto auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto;)
   }
 .grid-container > div {
+  width: 100%;
   padding: 10px;
   margin-top: 10px;
   align-items: center;
 }
 col-1 > div {
-  width: 20%;
-  max-width: 33%;
-  min-width: 10%;
+  width: ;
+  padding: 10px;
 }
 .card {
     display: inline-grid;
     max-width: 100%;
-    min-width: 25%;
+    min-width: 10%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 2px;
     text-align: left;
     background-color: #f1f1f1;
     border: 1px;
     border-color: lightGray;
-  }
+  }*/
 
-/*[class*="col-"] {
+[class*="col-"] {
   float: left;
   margin-left: 2%;
   margin-top: 1rem;
@@ -179,7 +167,6 @@ col-1 > div {
   margin-right: 20%;
   display: inline-block;
 }
-
 .blog-text {
   float: right;
   width: 55%;
@@ -239,3 +226,16 @@ footer {
     clear: both;
     color: white;
 }
+
+/*.subheader {
+  width: 33%;
+  display: inline;
+}*/
+/*flex version*/
+/*.grid-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 25%;
+}*/
